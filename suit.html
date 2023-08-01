@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <title>SUIT GAME!</title>
+
+    <style>
+        button i {
+            font-size: 70px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body class="bg bg-danger text-white">
+    <div class="text-center">
+        <h1>SCISSORS | PAPER | ROCK</h1>
+    </div>
+
+    <div class="d-flex justify-content-center gap-4 mt-5">
+        <div>
+            <h5>
+                YOU
+            </h5>
+        </div>
+        <div>
+            <span id="skor-player" class="h5">0</span> <span class="h5"> - </span> <span class="h5"
+                id="skor-computer">0</span>
+        </div>
+        <div>
+            <h5>Computer</h5>
+        </div>
+    </div>
+
+    <div class="mt-5 d-flex justify-content-center gap-4">
+        <button id="gunting" class="btn btn-primary rounded-circle btn-lg" onclick="ClickButton('scissors')">
+            <i class="far fa-hand-scissors"></i>
+        </button>
+        <button id="kertas" class="btn btn-primary rounded-circle btn-lg" onclick="ClickButton('paper')">
+            <i class="far fa-hand-paper"></i>
+        </button>
+        <button id="batu" class="btn btn-primary rounded-circle btn-lg" onclick="ClickButton('rock')">
+            <i class="far fa-hand-rock"></i>
+        </button>
+    </div>
+
+    <center class="mt-5">
+        <h3>
+            <div id="detik"></div>
+        </h3>
+    </center>
+    <div id="output-hasil" style="display: none;" class="mt-5">
+        <div class="d-flex justify-content-center gap-4 mt-4">
+            <div>
+                <button id="output-suit-player" class="btn btn-primary rounded-circle btn-lg">
+                    <div id="output-player"></div>
+                </button>
+            </div>
+            <div id="hasil"></div>
+            <div>
+                <button id="output-suit-computer" class="btn btn-primary rounded-circle btn-lg">
+                    <div id="output-computer"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="suit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
